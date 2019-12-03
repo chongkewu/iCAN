@@ -1,1 +1,7 @@
 *.pyc
+demo/HOI_Detection.pkl
+demo/Object_Detection.pkl
+lib/ult/ult1.py
+tools/Demo1.py
+Data/
+Weights/

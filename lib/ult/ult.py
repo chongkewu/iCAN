@@ -19,7 +19,7 @@ import random
 from random import randint
 import tensorflow as tf
 import cv2
-from config import cfg
+from ult.config import cfg
 
 def bbox_trans(human_box_ori, object_box_ori, ratio, size = 64):
 
@@ -481,5 +481,3 @@ def Augmented_HO_Neg_HICO(GT, Trainval_Neg, shape, Pos_augment, Neg_select):
     action_HO         = action_HO.reshape(num_pos_neg, 600) 
 
     return Pattern, Human_augmented, Object_augmented, action_HO, num_pos
-
-

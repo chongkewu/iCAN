@@ -62,7 +62,7 @@ if __name__ == '__main__':
     prior_mask     = pickle.load( open( cfg.DATA_DIR + '/' + 'prior_mask.pkl', "rb" ), encoding="latin1" )
     Action_dic     = json.load(   open( cfg.DATA_DIR + '/' + 'action_index.json'))
     Action_dic_inv = {y:x for x,y in Action_dic.items()}
-    Demo_RCNN      = pickle.load( open( args.Demo_RCNN, "rb" ), encoding="latin1")
+    Demo_RCNN      = pickle.load( open( args.Demo_RCNN, "rb" ), encoding="latin1", encoding="latin1")
 
 
     weight = cfg.ROOT_DIR + '/Weights/' + args.model + '/HOI_iter_' + str(args.iteration) + '.ckpt'
